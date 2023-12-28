@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="RoofTopTent2.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" camera-orbit="136.6deg 69.9deg 9.506m" field-of-view="30deg">
+      <button class="Hotspot" slot="hotspot-1" data-position="0.898898104285616m 2.7376431926472162m -1.38294264431604m" data-normal="0.9452649665837529m 0.22187474067775909m 0.2392608250395241m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Roof top tent</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="0.7945350907763349m 1.1066640808029375m -0.2319879967819647m" data-normal="0.9994103504360544m 0.007884664123618716m 0.03341831104261484m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Car</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+  </body>
+</html>
